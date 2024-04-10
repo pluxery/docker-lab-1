@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  my-ruby-app-3:
+  my-ruby-app-4:
     build:
       context: .
       dockerfile: Dockerfile
