@@ -7,7 +7,6 @@ set :port, 3000
 set :views, File.join(File.dirname(__FILE__), 'views')
 set :public_folder, File.join(File.dirname(__FILE__), 'public')
 
-
 get '/' do
   erb :index, layout: :layout
 end
