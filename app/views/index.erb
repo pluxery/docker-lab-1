@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Урааа работает</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пиццерия Моцарелла</title>
 </head>
 <body>
-  <h1>Поставьте автомат, пожалуйста :3</h1>
+<header>
+  <h1>Добро пожаловать в пиццерию Моцарелла!</h1>
+</header>
+
+<div class="menu">
+  <h2>Наше меню:</h2>
+  <ul>
+    <% @pizzas.each do |pizza| %>
+      <li>
+        <h3><%= pizza[:name] %></h3>
+        <p><%= pizza[:description] %></p>
+        <p>Цена: <%= pizza[:price] %>$</p>
+      </li>
+    <% end %>
+  </ul>
+</div>
 </body>
 </html>

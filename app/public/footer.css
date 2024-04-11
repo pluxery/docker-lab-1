@@ -1,0 +1,6 @@
+footer {
+    background-color: #333; /* Цвет фона подвала */
+    color: #fff; /* Цвет текста в подвале */
+    text-align: center;
+    padding: 10px;
+}

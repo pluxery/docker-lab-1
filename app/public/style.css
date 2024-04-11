@@ -1,32 +1,48 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #2196F3; /* Синий фон */
+    color: #ffffff; /* Белый текст */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
+header {
+    background-color: #1565C0; /* Темно-синий фон для заголовка */
+    color: #ffffff; /* Белый текст */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-h1 {
-    color: #333;
+.menu {
+    margin: 20px;
 }
 
-p {
-    color: #666;
+.menu h2 {
+    color: #2196F3; /* Синий цвет для заголовка меню */
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+.menu ul {
+    list-style: none;
+    padding: 0;
 }
 
-a:hover {
-    text-decoration: underline;
+.menu li {
+    background-color: #1565C0; /* Темно-синий фон для блока пиццы */
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.menu li h3 {
+    color: #ffffff; /* Белый текст для названия пиццы */
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #1565C0; /* Темно-синий фон для подвала */
+    color: #ffffff; /* Белый текст */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

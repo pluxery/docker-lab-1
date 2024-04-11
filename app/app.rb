@@ -1,17 +1,9 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+require_relative 'controllers/main_controller'
+
 set :bind, '0.0.0.0'
 set :port, 3000
 
-set :views, File.join(File.dirname(__FILE__), 'views')
-set :public_folder, File.join(File.dirname(__FILE__), 'public')
-
-get '/' do
-  erb :index, layout: :layout
-end
-
-
-get '/page' do
-  erb :page, layout: :layout
-end
+use MainController::App

@@ -1,7 +1,7 @@
-version: '3'
+version: '3.8'
 
 services:
-  my-ruby-app-4:
+  my-ruby-app-5:
     build:
       context: .
       dockerfile: Dockerfile
@@ -9,3 +9,16 @@ services:
       - "8081:3000"
     volumes:
       - ./app:/app
+
+  pizza_db:
+    image: mariadb:10.5
+    container_name: pizza_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: pizza_db
+      TZ: Asia/Vladivostok
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql

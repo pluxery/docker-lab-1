@@ -1,0 +1,25 @@
+.sidebar {
+    width: 200px;
+    background-color: #333; /* Цвет фона бокового меню */
+    padding: 20px;
+}
+
+.categories {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 10px;
+}
+
+.categories a {
+    color: #fff; /* Цвет текста разделов */
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.categories a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении на ссылку */
+}

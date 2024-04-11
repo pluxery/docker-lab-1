@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Цвет фона шапки */
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px; /* Размер логотипа */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px; /* Расстояние между пунктами меню */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* Цвет ссылок в меню */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении на ссылку */
+}
